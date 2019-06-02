@@ -87,9 +87,9 @@ public class LoginActivity extends AppCompatActivity {
                         .addOnCompleteListener(LoginActivity.this, new OnCompleteListener<AuthResult>() {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
-                                // If sign in fails, display a message to the user. If sign in succeeds
-                                // the auth state listener will be notified and logic to handle the
-                                // signed in user can be handled in the listener.
+                                // Si falla el inicio de sesión, muestre un mensaje al usuario. Si el inicio de sesión tiene éxito
+                                //se notificará al oyente del estado de autenticación y se le asignará lógica para manejar
+                                // el usuario con sesión iniciada se puede manejar en el oyente
                                 progressBar.setVisibility(View.GONE);
                                 if (!task.isSuccessful()) {
                                     // there was an error
